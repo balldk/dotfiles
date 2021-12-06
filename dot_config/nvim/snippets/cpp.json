@@ -1,0 +1,88 @@
+{
+    "normal_template": {
+        "prefix": ["structure"],
+        "body": [
+            "#include<bits/stdc++.h>",
+            "using namespace std;\n",
+            "int main() {",
+                "\t$1",
+                "\n\treturn 0;",
+            "}"
+        ],
+        "description": "Normal C++ template"
+    },
+    "CP_template": {
+        "prefix": ["cptemplate"],
+        "body": [
+            "#include<bits/stdc++.h>",
+            "using namespace std;",
+            "#define ll long long",
+            "#define For(i,a,b) for(int i=a;i<=b;++i)",
+            "#define Ford(i,a,b) for(int i=a;i>=b;--i)",
+            "#define Forin(a,arr) for(auto const& a : arr)",
+            "#define endl \"\\n\"",
+            "#define push emplace_back\n",
+            "int main() {",
+                "\tios_base::sync_with_stdio(false);",
+                "\tcin.tie(NULL);",
+                "\tcout.tie(NULL);",
+                "\t$1",
+                "\n\treturn 0;",
+            "}"
+        ],
+        "description": "Template for competitive programming"
+    },
+    "log": {
+        "prefix": ["log", "cout"],
+        "body": [
+            "cout << $1 << endl;"
+        ]
+    },
+    "for": {
+        "prefix": ["for"],
+        "body": [
+            "for ($1;$2;$3) {",
+            "\t$4",
+            "}"
+        ]
+    },
+    "fori": {
+        "prefix": ["fori"],
+        "body": [
+            "for (${1:int} ${2:i} = ${3:0}; $2 < ${4:n}; ++$2) {",
+            "\t$5",
+            "}"
+        ]
+    },
+    "forin": {
+        "prefix": ["forin"],
+        "body": [
+            "for (auto const& ${1:each} : ${2:arr}) {",
+            "\t$3",
+            "}"
+        ]
+    },
+    "if": {
+        "prefix": ["if"],
+        "body": [
+            "if (${1:true})",
+            "\t$2",
+            "}"
+        ]
+    },
+    "vector": {
+        "prefix": ["vector"],
+        "body": [
+            "vector<${1:int}> ${2:arr}(${3:len}, ${4:default});"
+        ]
+    },
+    "log_array": {
+        "prefix": ["log_array"],
+        "body": [
+            "for (int i = 0; i < ${1:n}; ++i) {",
+            "\tcout << ${2:arr}[i] << \" \";",
+            "}"
+        ]
+    }
+}
+

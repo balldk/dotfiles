@@ -1,0 +1,78 @@
+env:
+  TERM: xterm-256color
+
+window:
+  padding:
+    x: 10
+    y: 25
+  decorations: transparent
+  dimensions:
+    columns: 120
+    lines: 35
+
+font:
+  normal:
+    family: MesloLGS NF
+    style: Regular
+
+  bold:
+    family: MesloLGS NF
+    style: Bold
+
+  italic:
+    family: MesloLGS NF
+    style: Italic
+
+  bold_italic: 
+    family: MesloLGS NF
+    style: Bold Italic
+
+  offset:
+    x: 0
+    y: 1
+
+  size: 14.0
+
+background_opacity: 1
+
+# Run "xxd -psd" to explore key code
+key_bindings:
+  # - { key: J,        mods: Alt,     chars: "\x1b\x5b\x42"                       }
+  # - { key: K,        mods: Alt,     chars: "\x1b\x5b\x41"                       }
+  # - { key: H,        mods: Alt,     chars: "\x1b\x5b\x44"                           }
+  # - { key: L,        mods: Alt,     chars: "\x1b\x5b\x43"                           }
+  # - { key: H,        mods: Alt|Shift,     chars: "\x1b\x62"                           }
+  # - { key: L,        mods: Alt|Shift,     chars: "\x1b\x66"                           }
+  - { key: Left,     mods: Alt,         chars: "\x1b\x62"                           }
+  - { key: Right,    mods: Alt,         chars: "\x1b\x66"                           }
+  # - { key: Space,    mods: Control,     action: ToggleViMode                        }
+
+# Gruvbox
+colors:
+  # Default colors
+  primary:
+    # background: '#1f2227'
+    background: '#201f30'
+    # foreground: '#3c3836'
+
+  # Normal colors
+  normal:
+    black:   '#fbf1c7'
+    red:     '#cc241d'
+    green:   '#98971a'
+    yellow:  '#d79921'
+    blue:    '#458588'
+    magenta: '#b16286'
+    cyan:    '#689d6a'
+    white:   '#7c6f64'
+
+  # Bright colors
+  bright:
+    black:   '#928374'
+    red:     '#9d0006'
+    green:   '#79740e'
+    yellow:  '#b57614'
+    blue:    '#076678'
+    magenta: '#8f3f71'
+    cyan:    '#427b58'
+    white:   '#3c3836'
