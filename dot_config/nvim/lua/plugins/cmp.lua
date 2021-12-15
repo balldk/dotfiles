@@ -30,8 +30,8 @@ cmp.setup {
         end, { 'i', 'c' }),
 
         ['<CR>'] = cmp.mapping.confirm {
-          behavior = cmp.ConfirmBehavior.Replace,
-          select = true,
+            behavior = cmp.ConfirmBehavior.Replace,
+            select = true,
         },
 
         -- Move through snippet

@@ -5,8 +5,8 @@ require('theme')
 
 require('plugins/nvim-tree')
 require('plugins/tree-sitter')
-require('plugins/lsp-installer')
 require('plugins/lspconfig')
+require('plugins/lsp-installer')
 require('plugins/lspkind')
 require('plugins/cmp')
 
